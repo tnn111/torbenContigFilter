@@ -30,7 +30,7 @@ This sample module contains one small method that filters contigs.
     ######################################### noqa
     VERSION = "0.0.1"
     GIT_URL = "https://github.com/tnn111/torbenContigFilter.git"
-    GIT_COMMIT_HASH = "7cc7953fea88ac98fa8c1c1c04fce0b2c6d1a3dc"
+    GIT_COMMIT_HASH = "4fda53c6a60c49df67876b59c537b4f6b0121a92"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -159,8 +159,6 @@ This sample module contains one small method that filters contigs.
         # ctx is the context object
         # return variables are: output
         #BEGIN run_torbenContigFilter_min_max
-        print(params['min_length'], params['max_length'], params['assembly_ref'])
-        output = {}
         #END run_torbenContigFilter_min_max
 
         # At some point might do deeper type checking...
