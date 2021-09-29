@@ -342,6 +342,10 @@ class Application(object):
                              name='torbenContigFilter.run_torbenContigFilter',
                              types=[dict])
         self.method_authentication['torbenContigFilter.run_torbenContigFilter'] = 'required'  # noqa
+        self.rpc_service.add(impl_torbenContigFilter.run_torbenContigFilter_min_max,
+                             name='torbenContigFilter.run_torbenContigFilter_min_max',
+                             types=[dict])
+        self.method_authentication['torbenContigFilter.run_torbenContigFilter_min_max'] = 'required'  # noqa
         self.rpc_service.add(impl_torbenContigFilter.status,
                              name='torbenContigFilter.status',
                              types=[dict])
